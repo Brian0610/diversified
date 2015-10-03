@@ -1,0 +1,487 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========= END CSS RESET =========*/
+
+
+@font-face {
+	font-family: Roboto-Bold;  
+	src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Light;  
+	src: url('fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Medium;  
+	src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Thin;  
+	src: url('fonts/Roboto-Thin.ttf');
+}
+
+h1, h2, h3 {
+	font-family: 'Roboto-Bold'; 
+}
+
+p, li {
+    font-family: 'Roboto-Light';
+    font-size: 1em; 
+}
+
+a, address, ul, {
+	font-family: 'Roboto-Medium'; 
+}
+
+body {
+	background-color: #F5F5F5;
+}
+
+header {
+	width: 100%; 
+    background-color: #08bbfd; 
+    position: relative; 
+    z-index: 10; 
+    padding-bottom: 1em; 
+}
+
+
+h1.logo {
+    width: 180px;
+    height: 55px; 
+    position: relative;
+    left: 1em; 
+    top: 1em; 
+}
+
+h1.logo span {
+    background: url('images/dssLogo.jpg') no-repeat center; 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+
+
+	
+h2.sec-title {
+	font-weight: bold; 
+	text-align: center;
+	font-size: 1.5em; 
+}
+
+
+nav.main-nav {
+    position: relative; 
+    top: -1em; 
+    width: 30%; 
+  	left: 35%;     
+}
+
+a.main-nav {
+    margin: 0 1em; 
+    color: white; 
+    text-decoration: none;     
+    font-family: 'Roboto-Medium'; 
+}
+
+a.main-nav:hover, a.ftr-nav:hover {
+	text-decoration: underline; 
+}
+
+div.email {
+	height: 5em; 
+	width: 5em; 
+	background: url('images/email.png') no-repeat center; 
+	position: absolute; 
+	top: .2em; 
+	right: 1em;  
+	 
+}
+
+p.phone {
+	font-family: 'Roboto-Bold';
+	position: absolute; 
+	right: 5em; 
+	top: 1.2em;  
+	color: white; 
+	float: right;
+	font-style: italic; 
+	font-size: 1.5em; 
+}
+
+div.email:hover {
+	background: url('images/email.png') no-repeat center; 
+}
+
+
+/* ========= FEATURE =========*/
+
+#feature {
+    width: 100%;     
+    background-color: white; 
+    padding: .3em 0 0 0; 
+    position: relative;    
+    overflow: hidden; 
+}
+
+
+
+/* ========= PROFILE =========*/
+
+#profile {
+	padding: 1em 0; 
+	background-color: white; 
+}
+
+#profile-wrap {	
+	width: 80%; 
+	margin: 1em auto; 
+}
+
+div.info {
+	width: 30%; 
+	display: inline-block; 
+	margin: 1em .85em; 
+	position: relative; 
+}
+
+img.info {
+	display: block; 
+	margin: 2em auto; 
+}
+
+
+
+p.info {
+	text-align: center; 
+	line-height: 1.5em; 
+	margin: 1em 0; 
+	color: gray; 
+}
+
+/*============= PRODUCTS ===============*/
+
+#mfg {
+	font-family: Arial; 
+	width: 100%; 
+	text-align: center; 
+	background: #F5F5F5;	
+	position: relative;  
+	margin: auto; 
+	padding-bottom: 2em; 	
+}
+
+#mfgGrid {
+	width: 40%; 
+	margin: auto; 
+}
+
+#mfg h2 {
+	font-size: 2em; 
+	font-weight: 700; 
+	padding: 1.2em 0; 
+	margin-left: 1.3em
+}
+
+#r1, #r2, #r3, #r4 {
+	width: 35em; 
+}
+
+a.group {	 
+	display: inline-block; 
+	height: 5em; 
+	width: 5em;
+	line-height: 5em; 
+	padding: .5em; 
+	vertical-align: top; 
+	text-align: center; 
+	text-transform: uppercase;  
+	margin: .4em.25em; 
+	background: #08bbfd;
+	color: white; 
+}
+
+a.group:hover {
+	background:  #00B800; 
+}
+
+a.group span {
+	display: inline-block; 	
+	vertical-align: middle; 
+	line-height: normal; 
+}
+
+
+
+/* ========= FOOTER =========*/
+
+footer {
+	width: 100%; 	
+	background-color: #70A8BA; 
+	overflow: auto; 
+}
+
+
+#ftr-wrap {
+	width: 30%; 
+	float: right; 
+	margin-top: 2em; 
+}
+
+
+h2.ftr {	
+	width: 180px;
+    height: 50px; 
+    position: relative; 
+}
+
+h2.ftr span {
+	background: url('images/ftrLogo.jpg') no-repeat center; 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+}
+
+address.ftr {
+	margin: 0.5em 1em; 
+	padding: 1em; 	
+	font-family: 'Roboto-Light'; 
+	font-size: .8em; 
+	line-height: 1.5em; 
+	color: #EEE; 	
+}
+
+address.ftr h4 {
+	font-weight: bold; 
+	font-size: 1.25em; 
+}
+
+nav.ftr-nav a {
+	font-family: 'Roboto-Medium'; 
+	display: inline-block;  
+	margin: 1.5em 1em; 
+	color: white; 
+	text-decoration: none; 
+}
+
+#copyright {
+	color: white; 
+	background-color: #486C75; 
+	clear: both; 	
+	padding: 0.5em; 
+	font-size: .8em; 
+	text-align: center;
+}
+
+
+
+#sidebar {
+	width: 13%; 
+	position: relative; 
+	left: 10%; 
+	top: .75em; 
+}
+
+#sidebar h4 {
+	font-size: .5em;
+	letter-spacing: 0.025em; 
+	font-family: Arial;  
+}
+
+#sidebar a {
+	display: block; 
+	background-color: #70A8BA;
+	color: white; 
+	margin: .3em 0; 
+	text-decoration: none; 
+	padding: 0.3em 1em; 
+	font-family: 'Roboto-Medium'; 
+
+}
+
+#sidebar a:hover {	
+	background-color: #00B800;
+}
+
+#content {
+	background-color: white; 
+	border-top: 1px solid #CFCFCF; 
+	border-left: 1px solid #CFCFCF; 
+	width: 70%; 
+	float: right; 
+	margin: 1em 0em 0em 1em; 
+	padding: 2em 2em 4em 2em; 
+}
+
+#content h2 {
+	font-weight: bold; 
+	font-size: 1.5em; 	
+}
+
+/*========================================*/
+/*============ ABOUT PAGE ================*/ 
+/*========================================*/
+
+article figure {
+	width: 40%; 
+	float: right; 
+	margin: 2em 6em 1em 1em; 
+}
+
+article figure img {
+	width: 100%; 	
+}
+
+article figcaption {
+	font-style: italic; 
+	color: #555; 
+}
+
+article h3 {
+	margin: 1.5em 0 0.2em 0; 
+	font-weight: bold
+}
+article p {	
+	width: 60%; 	
+	line-height: 1.5em;   
+	color: #555; 
+
+}
+
+/*========================================*/
+/*============= PRODCUCTS ================*/ 
+/*========================================*/
+
+#col-1, #col-2, #col-3 {	
+	width: 25%; 
+	float: left; 
+	margin: 2em 1.5em 0 1.5em; 
+	
+}
+
+ul.mfg-list>li {	
+	color: blue; 
+	margin-bottom: 2em; 	
+}
+
+ul.mfg-list a {
+	color: blue; 
+	text-decoration: none; 
+}
+
+ul.mfg-list a:hover {
+	color: red; 
+	text-decoration: underline; 
+}
+
+ul.mfg-list a:visited {	
+	text-decoration: none;  
+}
+
+
+article ul li h3 {
+	font-size: 1.1em; 
+	margin: 0 0 .5em 0; 
+}
+article ul li ul li {	
+	margin-left: 1em; 
+	color: #555; 
+	line-height: 1.5em; 
+	font-size: .9em; 
+}
+
+
+/*========================================*/
+/*============== SERVICES ================*/ 
+/*========================================*/
+
+
+
+/*========================================*/
+/*=============== CONTACT ================*/ 
+/*========================================*/
+
+#cForm-wrap {
+	float: right; 
+	margin-right: 13em; 
+}
+
+#cInfo-wrap {
+	font-size: .9em;
+	width: 45%
+}
+
+#cInfo-wrap address {
+	margin: 3em 0 0 0; 
+	line-height: 1.4em; 
+	font-family: 'Roboto-Light'; 
+	 	 
+}
+
+#cInfo-wrap h4 {
+	font-family: 'Roboto-Bold'; 
+	font-weight: bold; 
+	font-size: 1.3em; 
+	margin: .5em 0; 
+}
+
+div.p-num {
+	line-height: 1.4em; 
+	margin-top: .5em; 
+}
+
+div.mail {
+	margin-top: 2em; 
+	font-size: 1.3em
+}
+
